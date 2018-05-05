@@ -41,6 +41,13 @@
       <button block type="submit" ion-button large>
         <ion-icon ios="ios-log-in" md="md-log-in" style="font-size:34px;padding-right:10px;"></ion-icon> Cadastrar Produto</button>
     </ion-row>
+    <ion-row padding>
+      <ion-list *ngFor="let produto of produtos">
+        <ion-col>
+        {{ produto.payload.val().nome }}    
+        </ion-col>
+      </ion-list>
+    </ion-row>
   </form>
 
 

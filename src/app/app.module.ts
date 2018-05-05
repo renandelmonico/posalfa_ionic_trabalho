@@ -21,6 +21,7 @@ import { RegistrarPage } from '../pages/registrar/registrar';
 import { FotoPage } from '../pages/foto/foto';
 import { Geolocation } from '@ionic-native/geolocation';
 import { CadastroProdutoPage } from '../pages/cadastro-produto/cadastro-produto';
+import { ProdutoProvider } from '../providers/produto/produto';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { CadastroProdutoPage } from '../pages/cadastro-produto/cadastro-produto'
     AuthProvider,
     LocalProvider,
     FotosProvider,
+    ProdutoProvider,
     Camera,      //plugin camera
     Geolocation //plugin de geolocalizacao
   ]
